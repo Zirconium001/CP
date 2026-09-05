@@ -2,11 +2,13 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+//dividing space inside node
 struct Node {
      int data;
      Node *next;
    };
 
+//node creation
 Node* createNode(int val) {
     Node *newNode = new Node();
     newNode -> data = val;
@@ -15,6 +17,7 @@ Node* createNode(int val) {
 }
 
 int main() {
+     //user input arrray
     int n;
     printf("Size of array: ");
     scanf("%d", &n);
@@ -23,6 +26,9 @@ int main() {
     for (int i=0;i<n;i++) {
         scanf("%d", &arr[i]);
     }
+
+
+     //linked list creation
     Node *head, *cur;
     head = NULL;
 
@@ -36,6 +42,9 @@ int main() {
           cur = cur -> next;
         } 
   }
+
+
+     //linked list traverse with proof
     cur = head;
     while (cur !=NULL) {
         cout<<cur->data;
