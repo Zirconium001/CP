@@ -67,6 +67,6 @@ int main() {
         }
     }
     else 
-        printf("Summation cannot be done!");
+        printf("Subtraction cannot be done!");
     return 0;
 }
