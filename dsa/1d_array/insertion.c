@@ -18,11 +18,11 @@ int main() {
       printf("Invalid location");
     }
     else {
-      
-    }
-  for (i=n; i>loc-1;i--) {
+       for (i=n; i>loc-1;i--) {
     arr[i] = arr[i-1];
-  }
+       }
+    }
+ 
   arr[loc-1] = val;
 
   for (i=0;i<=n;i++) {
